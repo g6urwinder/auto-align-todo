@@ -9,6 +9,7 @@
 extern "C" {
 #endif
     int32_t get_ncpu();
+    int32_t get_prompt();
 #ifdef __cplusplus
 }
 #endif
