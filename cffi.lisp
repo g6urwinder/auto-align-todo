@@ -17,3 +17,11 @@
 (print-system-info)
 ;; CPUs: = 8
 
+(defcfun "get_prompt" :int)
+(defun print-prompt ()
+  (let ((p (get-prompt)))
+    (format t "PROMPT: = ~d" p)))
+
+(get-prompt)
+;;
+
